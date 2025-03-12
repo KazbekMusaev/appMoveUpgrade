@@ -9,6 +9,7 @@
 enum Language: String {
     case english = "en"
     case spanish = "es"
+    case russian = "ru"
 }
 
 struct LocalizationHelper {

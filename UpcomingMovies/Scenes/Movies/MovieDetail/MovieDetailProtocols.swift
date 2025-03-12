@@ -27,6 +27,7 @@ protocol MovieDetailViewModelProtocol {
     var showErrorAlert: AnyPublishBindable<Error> { get }
     var showErrorRetryView: AnyPublishBindable<Error> { get }
     var didSelectShareAction: AnyPublishBindable<Bool> { get }
+    var didSelectTranslateAction: AnyPublishBindable<Bool> { get }
     var movieAccountState: AnyBehaviorBindable<MovieAccountStateModel?> { get }
 
     var movieDetailPosterRenderContent: AnyBehaviorBindable<MovieDetailPosterRenderContent?> { get }
@@ -91,7 +92,7 @@ protocol MovieDetailCoordinatorProtocol: AnyObject {
 
     func showMovieOption(_ option: MovieDetailOption)
     func showSharingOptions(withShareTitle title: String)
-
+    func showTranslateOption(title: String)
     func embedMovieDetailOptions(on parentViewController: MovieDetailOptionsViewControllerDelegate,
                                  in containerView: UIView)
     func embedMovieDetailOptions(on parentViewController: MovieDetailOptionsViewControllerDelegate,

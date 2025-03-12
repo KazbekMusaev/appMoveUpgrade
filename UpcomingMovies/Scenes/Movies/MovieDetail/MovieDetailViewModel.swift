@@ -29,7 +29,7 @@ final class MovieDetailViewModel: MovieDetailViewModelProtocol {
     let showErrorRetryView = PublishBindable<Error>().eraseToAnyBindable()
 
     let didSelectShareAction = PublishBindable<Bool>().eraseToAnyBindable()
-
+    let didSelectTranslateAction = PublishBindable<Bool>().eraseToAnyBindable()
     let movieAccountState = BehaviorBindable<MovieAccountStateModel?>(nil).eraseToAnyBindable()
 
     let movieDetailPosterRenderContent = BehaviorBindable<MovieDetailPosterRenderContent?>(nil).eraseToAnyBindable()
@@ -210,7 +210,13 @@ final class MovieDetailViewModel: MovieDetailViewModelProtocol {
         let shareAction = MovieDetailActionModel(title: LocalizedStrings.movieDetailShareActionTitle()) {
             self.didSelectShareAction.send(true)
         }
+        let translateAction = MovieDetailActionModel(title: "Перевести") {
+            self.didSelectTranslateAction.send(true)
+        }
         alertActions.append(shareAction)
+        if #available(iOS 17.4, *) {
+            alertActions.append(translateAction)
+        }
         if let watchlistAction = makeWatchlistAlertAction() { alertActions.append(watchlistAction) }
         return alertActions
     }

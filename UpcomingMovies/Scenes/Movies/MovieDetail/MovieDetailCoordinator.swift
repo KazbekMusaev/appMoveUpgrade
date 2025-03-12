@@ -54,6 +54,17 @@ final class MovieDetailCoordinator: BaseCoordinator, MovieDetailCoordinatorProto
         }
     }
 
+    func showTranslateOption(title: String) {
+        if #available(iOS 17.4, *) {
+            let translateView = TranslateView(tranlatedText: title)
+            if let sheet = translateView.sheetPresentationController {
+                sheet.detents = [.medium()]
+            }
+            translateView.modalPresentationStyle = .automatic
+            navigationController.present(translateView, animated: true)
+        }
+    }
+
     func showSharingOptions(withShareTitle title: String) {
         let activityViewController = UIActivityViewController(activityItems: [title],
                                                               applicationActivities: nil)
