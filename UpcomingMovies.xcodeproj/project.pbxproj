@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18C197442D82151200E128AE /* FBAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C197432D82151200E128AE /* FBAnalytics.swift */; };
+		18C197462D82153A00E128AE /* AnalyticsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C197452D82153A00E128AE /* AnalyticsNames.swift */; };
+		18C197482D8218E400E128AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18C197472D8218E400E128AE /* GoogleService-Info.plist */; };
+		18C1974A2D821DB500E128AE /* UIButton + AnalyticsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C197492D821DB500E128AE /* UIButton + AnalyticsExtensions.swift */; };
+		18C1974E2D821E9400E128AE /* UIBarButtonItem + AnalyticsExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1974D2D821E9400E128AE /* UIBarButtonItem + AnalyticsExt.swift */; };
+		18C197532D8239A100E128AE /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 18C197522D8239A100E128AE /* FirebaseAnalytics */; };
+		18C197552D8239A200E128AE /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 18C197542D8239A200E128AE /* FirebaseCore */; };
+		18C4024D2D81E2EE00C8ED4B /* TranslateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4024C2D81E2EE00C8ED4B /* TranslateViewModel.swift */; };
+		18C4024F2D81E7BB00C8ED4B /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4024E2D81E7BB00C8ED4B /* TranslateView.swift */; };
+		18C402542D81EF1F00C8ED4B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 18C402532D81EF1F00C8ED4B /* FirebaseAnalytics */; };
+		18C402562D81EF1F00C8ED4B /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 18C402552D81EF1F00C8ED4B /* FirebaseCore */; };
 		782DBD67221CACC800191FCA /* MovieVideosViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782DBD66221CACC800191FCA /* MovieVideosViewModelTests.swift */; };
 		8D9E6AA5AC63EC1CD4545CC2 /* Pods_UpcomingMoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAA4F08E81C71F32BC7520C /* Pods_UpcomingMoviesTests.framework */; };
 		9598E1DA49AA2CBA6E0628E0 /* Pods_UpcomingMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 811C39C9147DA695B15480ED /* Pods_UpcomingMovies.framework */; };
@@ -532,11 +543,18 @@
 		00A75CBE42C52DC4A0217395 /* Pods_UpcomingMovies_UpcomingMoviesTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpcomingMovies_UpcomingMoviesTodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BAA4F08E81C71F32BC7520C /* Pods_UpcomingMoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpcomingMoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA4109E4F3C2F81D8A3A4D3 /* Pods-NetworkInfrastructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkInfrastructure.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkInfrastructure/Pods-NetworkInfrastructure.release.xcconfig"; sourceTree = "<group>"; };
+		18C197432D82151200E128AE /* FBAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBAnalytics.swift; sourceTree = "<group>"; };
+		18C197452D82153A00E128AE /* AnalyticsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsNames.swift; sourceTree = "<group>"; };
+		18C197472D8218E400E128AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18C197492D821DB500E128AE /* UIButton + AnalyticsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + AnalyticsExtensions.swift"; sourceTree = "<group>"; };
+		18C1974D2D821E9400E128AE /* UIBarButtonItem + AnalyticsExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem + AnalyticsExt.swift"; sourceTree = "<group>"; };
 		18C402352D81ABA300C8ED4B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/SearchMovies.strings; sourceTree = "<group>"; };
 		18C402362D81ABA300C8ED4B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MovieDetail.strings; sourceTree = "<group>"; };
 		18C402372D81ABA300C8ED4B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Account.strings; sourceTree = "<group>"; };
 		18C402382D81ABA300C8ED4B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		18C402392D81AE7200C8ED4B /* Заметки */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Заметки"; sourceTree = "<group>"; };
+		18C4024C2D81E2EE00C8ED4B /* TranslateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewModel.swift; sourceTree = "<group>"; };
+		18C4024E2D81E7BB00C8ED4B /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
 		4D8E252D82D9C6FFBE665DB5 /* Pods-UpcomingMovies-UpcomingMoviesTodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpcomingMovies-UpcomingMoviesTodayExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-UpcomingMovies-UpcomingMoviesTodayExtension/Pods-UpcomingMovies-UpcomingMoviesTodayExtension.release.xcconfig"; sourceTree = "<group>"; };
 		4EA38A75D4B4FF7F60049320 /* Pods-NetworkInfrastructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkInfrastructure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkInfrastructure/Pods-NetworkInfrastructure.debug.xcconfig"; sourceTree = "<group>"; };
 		4F2EF8F9671B6A8C765A02CB /* Pods-UpcomingMovies-UpcomingMoviesWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpcomingMovies-UpcomingMoviesWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UpcomingMovies-UpcomingMoviesWidget/Pods-UpcomingMovies-UpcomingMoviesWidget.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1070,6 +1088,10 @@
 			files = (
 				E293AD27224B38480070F783 /* WebKit.framework in Frameworks */,
 				9598E1DA49AA2CBA6E0628E0 /* Pods_UpcomingMovies.framework in Frameworks */,
+				18C402562D81EF1F00C8ED4B /* FirebaseCore in Frameworks */,
+				18C197532D8239A100E128AE /* FirebaseAnalytics in Frameworks */,
+				18C197552D8239A200E128AE /* FirebaseCore in Frameworks */,
+				18C402542D81EF1F00C8ED4B /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1093,6 +1115,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18C197422D8214FE00E128AE /* AnalyticsModule */ = {
+			isa = PBXGroup;
+			children = (
+				18C197432D82151200E128AE /* FBAnalytics.swift */,
+				18C197452D82153A00E128AE /* AnalyticsNames.swift */,
+				18C197492D821DB500E128AE /* UIButton + AnalyticsExtensions.swift */,
+				18C1974D2D821E9400E128AE /* UIBarButtonItem + AnalyticsExt.swift */,
+			);
+			path = AnalyticsModule;
+			sourceTree = "<group>";
+		};
+		18C402492D81E2CD00C8ED4B /* TranslateHelper */ = {
+			isa = PBXGroup;
+			children = (
+				18C4024C2D81E2EE00C8ED4B /* TranslateViewModel.swift */,
+				18C4024E2D81E7BB00C8ED4B /* TranslateView.swift */,
+			);
+			path = TranslateHelper;
+			sourceTree = "<group>";
+		};
 		40F1AD1B5623EBC5C5B037B7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1449,6 +1491,8 @@
 		E221167E21914E4B0039F8C9 /* UpcomingMovies */ = {
 			isa = PBXGroup;
 			children = (
+				18C197422D8214FE00E128AE /* AnalyticsModule */,
+				18C402492D81E2CD00C8ED4B /* TranslateHelper */,
 				E291266F250DD03F007AD101 /* DependencyInjection */,
 				E222DC232192AF7A00A2EDF4 /* ViewComponents */,
 				E22116A221914EF00039F8C9 /* Scenes */,
@@ -1460,6 +1504,7 @@
 				E221168D21914E4C0039F8C9 /* Info.plist */,
 				E222DC1D2192A76700A2EDF4 /* Localizable.strings */,
 				E2FD140B23F972EF00455495 /* SceneDelegate.swift */,
+				18C197472D8218E400E128AE /* GoogleService-Info.plist */,
 			);
 			path = UpcomingMovies;
 			sourceTree = "<group>";
@@ -2893,6 +2938,9 @@
 				ru,
 			);
 			mainGroup = E221167321914E4B0039F8C9;
+			packageReferences = (
+				18C197512D8239A100E128AE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E221167D21914E4B0039F8C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -2926,6 +2974,7 @@
 				E2A256772CBBA03B00C625CC /* CollapsibleCollectionHeaderView.xib in Resources */,
 				E29E3812230E4F1300C351BF /* MovieDetail.storyboard in Resources */,
 				E223B08822482A170050277B /* ProfileSelectableOptionTableViewCell.xib in Resources */,
+				18C197482D8218E400E128AE /* GoogleService-Info.plist in Resources */,
 				E21F37942193F47800D6BFB6 /* RecentSearchCell.xib in Resources */,
 				E22116A7219150490039F8C9 /* UpcomingMovies.storyboard in Resources */,
 				E222DC2B2192B83200A2EDF4 /* MovieListCell.xib in Resources */,
@@ -3092,6 +3141,7 @@
 				E221F765222B9C7A008DFF87 /* SavedMoviesViewModel.swift in Sources */,
 				E263FAA024D52DBF00990638 /* SimilarMoviesCoordinator.swift in Sources */,
 				E2BCD6F724A068CB00FA4A1C /* MovieReviewsCoordinator.swift in Sources */,
+				18C4024F2D81E7BB00C8ED4B /* TranslateView.swift in Sources */,
 				E2E518A024A9910000CC3FA5 /* MovieReviewDetailProtocols.swift in Sources */,
 				E22116CA219167B50039F8C9 /* UpcomingMoviesViewController.swift in Sources */,
 				E211282C293DC5A400336165 /* UpcomingMoviesViewState.swift in Sources */,
@@ -3138,6 +3188,7 @@
 				E222B95B21FA0F49008BA816 /* UpcomingMovieCellViewModel.swift in Sources */,
 				E26882DC251456040000B581 /* MovieVideosAssembly.swift in Sources */,
 				E222DC262192AF9700A2EDF4 /* MovieListCell.swift in Sources */,
+				18C1974A2D821DB500E128AE /* UIButton + AnalyticsExtensions.swift in Sources */,
 				E27C019D280BFDD1000C510A /* MovieDetailActionModel.swift in Sources */,
 				E229AFAB24A8451F002AB427 /* SavedMoviesProtocols.swift in Sources */,
 				E2DCBB192C688DC200B3593E /* ProfileSignOutCellViewModel.swift in Sources */,
@@ -3234,6 +3285,7 @@
 				E228430F250ED1A900F053DE /* HandlerAssembly.swift in Sources */,
 				E2709630247B686100AE694E /* Entities+ImageConfiguration.swift in Sources */,
 				E208FC472635238A008593D8 /* SimpleViewStateProcessable.swift in Sources */,
+				18C197442D82151200E128AE /* FBAnalytics.swift in Sources */,
 				E223B086224828FB0050277B /* ProfileSelectableOptionCellViewModel.swift in Sources */,
 				E22671AB28E95396003AA27C /* PublishBindable.swift in Sources */,
 				E2C14FF72C1956F40050236F /* ListProtocol.swift in Sources */,
@@ -3270,6 +3322,7 @@
 				E2C9C0DC26425AF100DDD067 /* MovieDetailOptionView.swift in Sources */,
 				E2116946220E3F7800595822 /* SearchOptionsDataSource.swift in Sources */,
 				E2A750F32BF1D559007A194C /* CrewProtocol.swift in Sources */,
+				18C1974E2D821E9400E128AE /* UIBarButtonItem + AnalyticsExt.swift in Sources */,
 				E223B08A22482BAD0050277B /* ProfileDataSource.swift in Sources */,
 				E2A750F12BF1D40C007A194C /* CastProtocol.swift in Sources */,
 				E20118E825FF258A0091D248 /* ConfigurationHandlerProtocol.swift in Sources */,
@@ -3355,6 +3408,7 @@
 				E222B95F21FA2759008BA816 /* CollectionViewCellAnimator.swift in Sources */,
 				E221F761222AF15B008DFF87 /* AppShortcutItem.swift in Sources */,
 				E2EB92452213D9700067F011 /* Dequeueable.swift in Sources */,
+				18C197462D82153A00E128AE /* AnalyticsNames.swift in Sources */,
 				E25093BE2935C512004755AD /* AnyBehaviorBindable.swift in Sources */,
 				E25F9CF2225B090C0069A6A1 /* PlaceholderDisplayable.swift in Sources */,
 				E2DCE7F424B12F4F0041301E /* ToggleBarButtonItem.swift in Sources */,
@@ -3389,6 +3443,7 @@
 				E2FE17F82A5296FA0033D6A2 /* SignInAssembly.swift in Sources */,
 				E2601170219388C500E53095 /* ColorPalette.swift in Sources */,
 				E2F789F82598401700002CAD /* AppExtension.swift in Sources */,
+				18C4024D2D81E2EE00C8ED4B /* TranslateViewModel.swift in Sources */,
 				E2C44C1F2616C6D0004B9C9B /* ToastFailureConfiguration.swift in Sources */,
 				E290DF06249FB23E00BABBB8 /* MovieVideosCoordinator.swift in Sources */,
 				E20191432934735800770948 /* BehaviorBindableProtocol.swift in Sources */,
@@ -3740,14 +3795,14 @@
 				CODE_SIGN_ENTITLEMENTS = UpcomingMovies/UpcomingMovies.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F7NHX5BAFW;
 				INFOPLIST_FILE = UpcomingMovies/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Alonso.UpcomingMovies.AppDev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazbekMusaev.UpcomingMovies.AppDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -3764,14 +3819,14 @@
 				CODE_SIGN_ENTITLEMENTS = UpcomingMovies/UpcomingMovies.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F7NHX5BAFW;
 				INFOPLIST_FILE = UpcomingMovies/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Alonso.UpcomingMovies.AppDev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazbekMusaev.UpcomingMovies.AppDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -3786,14 +3841,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F7NHX5BAFW;
 				INFOPLIST_FILE = UpcomingMoviesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Alonso.UpcomingMoviesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazbekMusaev.UpcomingMoviesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3808,14 +3863,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F7NHX5BAFW;
 				INFOPLIST_FILE = UpcomingMoviesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Alonso.UpcomingMoviesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazbekMusaev.UpcomingMoviesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3830,7 +3885,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F7NHX5BAFW;
 				INFOPLIST_FILE = UpcomingMoviesWidgetExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3838,7 +3893,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Alonso.UpcomingMovies.AppDev.Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazbekMusaev.UpcomingMovies.AppDev.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -3853,7 +3908,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F7NHX5BAFW;
 				INFOPLIST_FILE = UpcomingMoviesWidgetExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3861,7 +3916,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Alonso.UpcomingMovies.AppDev.Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazbekMusaev.UpcomingMovies.AppDev.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -3909,6 +3964,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18C197512D8239A100E128AE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.9.0;
+			};
+		};
+		18C402522D81EF1F00C8ED4B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18C197522D8239A100E128AE /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18C197512D8239A100E128AE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		18C197542D8239A200E128AE /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18C197512D8239A100E128AE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		18C402532D81EF1F00C8ED4B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18C402522D81EF1F00C8ED4B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		18C402552D81EF1F00C8ED4B /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18C402522D81EF1F00C8ED4B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E221167421914E4B0039F8C9 /* Project object */;
 }

@@ -19,6 +19,7 @@ class ToggleBarButtonItem: UIBarButtonItem {
         self.contents = contents
         super.init()
         configure(for: currentContentIndex)
+        trackButtonClick()
     }
 
     convenience init(viewModel: ToggleBarButtonItemViewModelProtocol) {

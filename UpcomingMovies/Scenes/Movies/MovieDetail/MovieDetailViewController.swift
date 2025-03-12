@@ -154,6 +154,10 @@ final class MovieDetailViewController: UIViewController, Storyboarded, Transitio
             self.favoriteBarButtonItem.toggle(to: isFavorite.intValue)
             self.navigationItem.rightBarButtonItems = [self.moreBarButtonItem, self.favoriteBarButtonItem]
         }, on: .main)
+        viewModel?.didSelectTranslateAction.bind({ [weak self] _ in
+            guard let self else { return }
+            self.translateMovieInfo()
+        }, on: .main)
     }
 
     private func setupLoaderBindable() {
@@ -206,6 +210,11 @@ final class MovieDetailViewController: UIViewController, Storyboarded, Transitio
     private func shareMovie() {
         guard let viewModel else { return }
         coordinator?.showSharingOptions(withShareTitle: viewModel.shareTitle)
+    }
+    
+    private func translateMovieInfo() {
+        guard let viewModel else { return }
+        coordinator?.showTranslateOption(title: "\(viewModel.title)" + "\n" + "\(viewModel.overview ?? "")")
     }
 
     @IBAction private func favoriteButtonAction(_ sender: Any) {
