@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Movie Overview"; ObjectID = "1SK-ri-asW"; */
+"1SK-ri-asW.text" = "Обзор фильма";
+
+/* Class = "UIViewController"; title = "MovieDetailViewController"; ObjectID = "4Ld-U6-Odg"; */
+"4Ld-U6-Odg.title" = "MovieDetailViewController";
+
+/* Class = "UILabel"; text = "Comedy"; ObjectID = "Gkj-So-5cA"; */
+"Gkj-So-5cA.text" = "Комедии";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ORt-kW-oBS"; */
+"ORt-kW-oBS.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "T7r-FB-BUB"; */
+"T7r-FB-BUB.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "WIf-nz-hfn"; */
+"WIf-nz-hfn.text" = "Label";
+
+/* Class = "UILabel"; text = "Release"; ObjectID = "biy-Ap-rpF"; */
+"biy-Ap-rpF.text" = "Дата выхода";
+
+/* Class = "UILabel"; text = "Movie"; ObjectID = "j2H-6z-1N1"; */
+"j2H-6z-1N1.text" = "Фильм";
+
+/* Class = "UILabel"; text = "2018-03-12"; ObjectID = "slt-aQ-ofO"; */
+"slt-aQ-ofO.text" = "2018-03-12";
+
+/* Class = "UILabel"; text = "Genre"; ObjectID = "wff-o9-jFG"; */
+"wff-o9-jFG.text" = "Жанр";

@@ -532,6 +532,11 @@
 		00A75CBE42C52DC4A0217395 /* Pods_UpcomingMovies_UpcomingMoviesTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpcomingMovies_UpcomingMoviesTodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BAA4F08E81C71F32BC7520C /* Pods_UpcomingMoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpcomingMoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA4109E4F3C2F81D8A3A4D3 /* Pods-NetworkInfrastructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkInfrastructure.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkInfrastructure/Pods-NetworkInfrastructure.release.xcconfig"; sourceTree = "<group>"; };
+		18C402352D81ABA300C8ED4B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/SearchMovies.strings; sourceTree = "<group>"; };
+		18C402362D81ABA300C8ED4B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MovieDetail.strings; sourceTree = "<group>"; };
+		18C402372D81ABA300C8ED4B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Account.strings; sourceTree = "<group>"; };
+		18C402382D81ABA300C8ED4B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18C402392D81AE7200C8ED4B /* Заметки */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Заметки"; sourceTree = "<group>"; };
 		4D8E252D82D9C6FFBE665DB5 /* Pods-UpcomingMovies-UpcomingMoviesTodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpcomingMovies-UpcomingMoviesTodayExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-UpcomingMovies-UpcomingMoviesTodayExtension/Pods-UpcomingMovies-UpcomingMoviesTodayExtension.release.xcconfig"; sourceTree = "<group>"; };
 		4EA38A75D4B4FF7F60049320 /* Pods-NetworkInfrastructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkInfrastructure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkInfrastructure/Pods-NetworkInfrastructure.debug.xcconfig"; sourceTree = "<group>"; };
 		4F2EF8F9671B6A8C765A02CB /* Pods-UpcomingMovies-UpcomingMoviesWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpcomingMovies-UpcomingMoviesWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UpcomingMovies-UpcomingMoviesWidget/Pods-UpcomingMovies-UpcomingMoviesWidget.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1419,6 +1424,7 @@
 		E221167321914E4B0039F8C9 = {
 			isa = PBXGroup;
 			children = (
+				18C402392D81AE7200C8ED4B /* Заметки */,
 				E221167E21914E4B0039F8C9 /* UpcomingMovies */,
 				E221169521914E4D0039F8C9 /* UpcomingMoviesTests */,
 				E2EBDC2E256A26060026319B /* UpcomingMoviesWidgetExtension */,
@@ -2884,6 +2890,7 @@
 				en,
 				Base,
 				"es-419",
+				ru,
 			);
 			mainGroup = E221167321914E4B0039F8C9;
 			productRefGroup = E221167D21914E4B0039F8C9 /* Products */;
@@ -3561,6 +3568,7 @@
 			children = (
 				E222DC1C2192A76700A2EDF4 /* en */,
 				E218ADA922F92E210061570C /* es-419 */,
+				18C402382D81ABA300C8ED4B /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -3571,6 +3579,7 @@
 				E29E3813230E4F1300C351BF /* Base */,
 				E29E3816230E4F1B00C351BF /* en */,
 				E29E3818230E4F1E00C351BF /* es-419 */,
+				18C402362D81ABA300C8ED4B /* ru */,
 			);
 			name = MovieDetail.storyboard;
 			sourceTree = "<group>";
@@ -3581,6 +3590,7 @@
 				E29E381A230E547400C351BF /* Base */,
 				E29E381D230E547900C351BF /* en */,
 				E29E381F230E547D00C351BF /* es-419 */,
+				18C402352D81ABA300C8ED4B /* ru */,
 			);
 			name = SearchMovies.storyboard;
 			sourceTree = "<group>";
@@ -3591,6 +3601,7 @@
 				E29E3821230E54CB00C351BF /* Base */,
 				E29E3824230E54CF00C351BF /* en */,
 				E29E3826230E54D300C351BF /* es-419 */,
+				18C402372D81ABA300C8ED4B /* ru */,
 			);
 			name = Account.storyboard;
 			sourceTree = "<group>";
