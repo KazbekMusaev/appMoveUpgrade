@@ -1,69 +1,47 @@
-# Upcoming Movies App
+1. Улучшение архитектуры и обработки ошибок:
+ 1.1)Рефакторинг. Выделите логику работы с данными и сетевыми запросами в
+отдельный слой, используя, например, архитектурный паттерн MVVM для
+разделения UI и бизнес-логики.
+ 1.2)Добавьте расширенную обработку ошибок в сетевом слое. При сбое запроса
+(например, отсутствие сети или ошибка сервера) должно отображаться
+информативное сообщение пользователю.
+2. Асинхронная загрузка изображений:
+ 2.1)Интегрируйте стороннюю библиотеку (например, Kingfisher или SDWebImage) для
+асинхронной загрузки и кэширования изображений постеров фильмов. Это
+улучшит производительность и обеспечит плавный пользовательский опыт.
+3. Обновление документации и Git-истории:
+ 3.1)Обновите README.md, добавив краткое описание проделанных изменений и
+инструкции по сборке/запуску проекта.
+ 3.2)Выполните работу в отдельной ветке с последовательными коммит-сообщениями,
+отражающими ключевые этапы доработки.
+Дополнительные улучшения (опционально):
+ 3.3)Можете добавить дополнительные улучшения по своему усмотрению.
 
-[![License](https://img.shields.io/badge/license-MIT-blue)]()
-[![Platform](https://img.shields.io/badge/platform-iOS-violet)]()
-[![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg?style=flat)](https://developer.apple.com/swift/)
-[![codecov](https://codecov.io/gh/DeluxeAlonso/UpcomingMovies/graph/badge.svg?token=WlD3VVKP1p)](https://codecov.io/gh/DeluxeAlonso/UpcomingMovies)
+1.1
+Проект уже был реализван на архитектуре MVVM + Interactor + Coordinator
+    1 - ViewModel — отвечает за подготовку данных для View и взаимодействие с Interactor.
+    2 - Interactor — содержит бизнес-логику, включая сетевые запросы.
+    3 - Coordinator — управляет навигацией и потоком данных между экранами.
+    4 - View (ViewController) — отвечает за отображение данных.
+В нем сетевой слой был в отдельном модуле, т.е в отдельном пользовательском фреймворке. 
+В нем уже была разделена UI и бизнес логика. Сетевые запросы не выполняются внутри Coordinator или во View(ViewController). Они все находятся внутри Interactor. 
 
-Movies app written in Swift 5 using the TMDb API and demonstrating Clean Architecture, Dependency Injection, MVVM and Coordinators.
+1.2
+Это тоже уже реализовани в проекте. 
+Есть enum APIError. 
+На примере UpcomingMoviews:
+Загрузка фильмов, в UpcomingMoviesViewModel метод getMovies(). В нем вызывается метод fetchMovies в котором реализация работы сети interactor.getMovies. В зависимости от ответа сети, у нас меняется значение viewModel.viewState. На которой уже привязана логика показа view, в зависимости от значения в state. 
 
-## Demo
+2.1 
+  В проекте уже был добавлен Kingfisher, с асихронной загрузкой изображения.
 
-<img src="Demo.gif" width="200" height="433" />
+Также в коде, при загрузке данных, есть асинхроннове выполнение, через DispatchGroup
+Задание было выполнено еще до того, как я его открою. Ни один сетевой запрос не находится внутри View, либо внутри Coordinator. 
 
-## Screenshots
 
-<img src="Screenshots/Home.png" width=200 height=433> <img src="Screenshots/Detail.png" width=200 height=433>
-<img src="Screenshots/Search.png" width=200 height=433> <img src="Screenshots/SearchResult.png" width=200 height=433>
-<img src="Screenshots/Reviews.png" width=200 height=433> <img src="Screenshots/Videos.png" width=200 height=433>
-<img src="Screenshots/Credits.png" width=200 height=433> <img src="Screenshots/Favorites.png" width=200 height=433>
-<img src="Screenshots/SignIn.png" width=200 height=433> <img src="Screenshots/Profile.png" width=200 height=433>
-<img src="Screenshots/CustomLists.png" width=200 height=433> <img src="Screenshots/CustomListDetail.png" width=200 height=433>
-<img src="Screenshots/TodayExtension.png" width=200 height=433> <img src="Screenshots/Widgets/Small/Upcoming.png" width=200 height=433> 
-<img src="Screenshots/Widgets/Small/Search.png" width=200 height=433>
+Я добавил мелкую аналитику(которая показывает переходы по экранам), сделал локализацию приложения, также локализацию фильмов. Некоторые фильмы не переводились, я добавил системный переводчик, который открывается при нажатии на кнопку "···", при откритии любого фильма, если версия ios выше 17.4. То у нас появилась кнопка "перевести"
 
-## How to run
+По итогу, я не сделал практически ничего. На поиски ошибок и проверку проекта, у меня ушло много времени. Я не смог найти ошибки в логике. Пришлось искать по всему проекту, в поисках, где нет реализации MVVM, или есть ошибки. Единственные чтобы я тут улучшил, это удалил бы сториборды все, и сделал бы кодом. 
 
-### Requirements
 
-1. Xcode 14.0+
-2. Cocoapods 1.9.0+
-3. Fastlane 2.1.0+ (only needed if you want to run the unit tests and swift lint scans via the CLI).
-
-### Getting started
-
-1. Clone this repository.
-2. Via the CLI, go to the root folder of the project where Podfile is located and run `pod install`.
-3. Open the workspace file and you are ready to go.
-
-*Note: you can run the tests either using `CMD+U` on Xcode or running `fastlane tests` via the CLI.* 
-
-## First-party libraries
-
-### DLProgressHUD (https://github.com/DeluxeAlonso/DLProgressHUD)
-Lightweight Progress HUD implementation for iOS.
-
-## Third-party libraries
-
-### Kingfisher (https://github.com/onevcat/Kingfisher)
-Used for downloading and caching images. In the app, it is used to show the poster and backdrop image of the movie.
-
-### CollectionViewSlantedLayout (https://github.com/yacir/CollectionViewSlantedLayout)
-Custom UICollectionViewLayout to display slanted content. In the app, it is used to present the list of favorite movies.
-
-### KeychainSwift (https://github.com/evgenyneu/keychain-swift)
-Helper functions for saving text in Keychain securely for iOS, OS X, tvOS and watchOS. In the app, it is used to save the Session Id and Account Id of the signed in user.
-
-### SwiftLint (https://github.com/realm/SwiftLint)
-A tool to enforce Swift style and conventions.
-
-### Swinject (https://github.com/Swinject/Swinject)
-Dependency injection framework for Swift.
-
-## Contributing
-
-Feel free to open an issue or submit a pull request if you have any improvement or feedback.
-
-## Author
-
-Alonso Alvarez, alonso.alvarez.dev@gmail.com
+   
