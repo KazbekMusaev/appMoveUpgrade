@@ -49,11 +49,13 @@ final class ShrinkingButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
+        trackButtonClick()
     }
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupUI()
+        trackButtonClick()
     }
 
     // MARK: - Lifecycle

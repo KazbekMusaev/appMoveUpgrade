@@ -28,7 +28,7 @@ final class MovieCreditCellViewModel: MovieCreditCellViewModelProtocol {
         name = cast.name
         role = cast.character
         profileURL = cast.profileURL
-
+        print("credit cell")
         accessibilityText = String(format: LocalizedStrings.movieCreditAccessibility(), name, role)
     }
 

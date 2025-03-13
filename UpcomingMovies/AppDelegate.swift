@@ -8,6 +8,7 @@
 
 import UIKit
 import UpcomingMoviesData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         _ = DIContainer.shared
-
+        FirebaseApp.configure()
+        FBAnalytics.logEvent(
+            AnalyticsNames.appFistLoad.rawValue,
+            parameters: ["appLoad" : "success"])
         navigationHandler = DIContainer.shared.resolve()
 
         configureGlobalAppearanceIfNeeded()

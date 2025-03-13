@@ -1,0 +1,97 @@
+/* 
+  File.strings
+  UpcomingMovies
+
+  Created by Alonso on 11/6/18.
+  Copyright © 2018 Alonso. All rights reserved.
+*/
+
+"upcomingMoviesTabBarTitle" = "Скоро";
+"upcomingMoviesTitle" = "Скоро в кино";
+
+"searchMoviesTabBarTitle" = "Поиск";
+"searchMoviesTitle" = "Поиск фильмов";
+"recentSearches" = "Недавние поиски";
+"emptySearchResults" = "Нет результатов для отображения.";
+
+"recentlyVisitedSeearchSectionTitle" = "Недавно просмотренные";
+"movieGenresSearchSectionTitle" = "Жанры фильмов";
+
+"favoritesTabBarTitle" = "Избранное";
+"favoritesTitle" = "Избранное";
+
+"accountTabBarTitle" = "Аккаунт";
+"accountTitle" = "Аккаунт";
+
+"favoritesCollectionOption" = "Избранное";
+"watchlistCollectionOption" = "Смотреть позже";
+"customListGroupOption" = "Созданные списки";
+"recomendedMoviesOption" = "Рекомендации";
+"includeAdults" = "Включать фильмы для взрослых";
+
+"signIn" = "Войти";
+
+"signOutConfirmationTitle" = "Вы уверены, что хотите выйти?";
+"signOut" = "Выйти";
+
+"emptyMovieResults" = "Нет фильмов для отображения.";
+"emptyVideoResults" = "Нет трейлеров для отображения.";
+"emptyCreditResults" = "Нет информации о съемочной группе.";
+"emptyReviewResults" = "Нет отзывов для отображения.";
+
+"movieDetailTitle" = "Детали фильма";
+"movieDetailShareActionTitle" = "Поделиться этим фильмом!";
+"movieDetailShareText" = "Пойдем со мной посмотреть %@!";
+"reviewsDetailOptions" = "Отзывы";
+"trailersDetailOptions" = "Трейлеры";
+"creditsDetailOptions" = "Съемочная группа";
+"similarsDetailOptions" = "Похожие фильмы";
+
+"movieCreditAccessibility" = "%@ в роли %@";
+
+"addToFavoritesHint" = "Добавить в избранное";
+"removeFromFavoritesHint" = "Удалить из избранного";
+"addToFavoritesSuccess" = "Добавлено в избранное!";
+"removeFromFavoritesSuccess" = "Удалено из избранного";
+
+"addToWatchlistHint" = "Добавить в список просмотра";
+"removeFromWatchlistHint" = "Удалить из списка просмотра";
+"addToWatchlistSuccess" = "Добавлено в список просмотра";
+"removeFromWatchlistSuccess" = "Удалено из списка просмотра";
+
+"expandMovieCellsHint" = "Развернуть фильмы";
+"collapseMovieCellsHint" = "Свернуть фильмы";
+
+"topRatedMoviesTitle" = "Лучшие фильмы";
+"topRatedMoviesSubtitle" = "Лучшие фильмы по рейтингу";
+"popularMoviesTitle" = "Популярные фильмы";
+"popularMoviesSubtitle" = "Самые популярные фильмы";
+"similarMoviesTitle" = "Похожие фильмы";
+
+"cast" = "Актеры";
+"crew" = "Съемочная группа";
+
+"ratingHint" = "Рейтинг %.1f";
+
+"cancel" = "Отмена";
+
+"shareMovieActionSheetItemTitle" = "Поделиться этим фильмом!";
+
+"upcomingMoviesSmallWidgetTitle" = "Скоро";
+"upcomingMoviesWidgetDescription" = "Будьте в курсе последних релизов";
+
+"searchMoviesSmallWidgetTitle" = "Поиск";
+"searchMoviesWidgetDescription" = "Ищите свои любимые фильмы";
+
+"movieListRecommendationsTitle" = "Рекомендации";
+"movieListCellGenreTitle" = "Жанр:";
+"movieListCellReleaseDateTitle" = "Дата выхода:";
+
+"customListDetailSectionMovieCountTitle" = "Фильмы";
+"customListDetailSectionRatingTitle" = "Рейтинг";
+"customListDetailSectionRuntimeTitle" = "Время";
+"customListDetailSectionRevenueTitle" = "Доход";
+
+"errorPlaceHolderViewTitleText" = "Упс!";
+"errorPlaceHolderViewDetailText" = "Что-то пошло не так.";
+"errorPlaceHolderViewRetryButtonTitle" = "Повторить";
